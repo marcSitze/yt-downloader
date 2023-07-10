@@ -1,0 +1,19 @@
+{
+  "name": "yt-downloader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "google-auth-library": "^8.9.0",
+    "googleapis": "^120.0.0",
+    "ytdl-core": "^4.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
