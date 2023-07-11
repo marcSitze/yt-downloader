@@ -12,13 +12,12 @@ const videoInfo = ytdl
   .then((data) => data.json()).catch(err => console.error(err))
 const videoTitle = videoInfo?.videoDetails?.title || "download";
 const videoStream = ytdl(videoUrl);
-
 // Save video to Google Drive
 const auth = new OAuth2(
   process.env.CLIENT_ID ||
     "19556260960-nmbagub6jhlr15vnckr8r7mf2fcrll3o.apps.googleusercontent.com", // 19556260960-nmbagub6jhlr15vnckr8r7mf2fcrll3o.apps.googleusercontent.com
   process.env.CLIENT_SECRET || "GOCSPX-7Rw89cShYyJOou7qYaQ-ZUKb4mq", // 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
-  process.env.REDIRECT_URI || "http://localhost:8000"
+  process.env.REDIRECT_URI || "https://developers.google.com/oauthplayground"
 );
 
 const scopes = [
